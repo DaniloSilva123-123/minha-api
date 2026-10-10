@@ -21,3 +21,12 @@ def sobre():
         "linguagem": "Python",
         "framework": "FastAPI"
     }
+
+@app.get("/sobre-mim")
+def sobre_mim():
+    return {
+        "projeto": "Minha API",
+        "linguagem": "Python",
+        "framework": "FastAPI",
+        "mensagem": "Meu projeto está no GitHub!"
+    }
